@@ -30,13 +30,13 @@ body{
 
 .wrapper{
 	width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+    	padding: 20px;
+    	box-sizing: border-box;
 
 }
 .content{
 	max-width: 80%;
-    margin: 0 auto;
+    	margin: 0 auto;
 }
 
 .title{
@@ -50,7 +50,7 @@ header{
 	box-shadow: 0 2px 4px rgb(0 0 0 / 30%);
 	position: sticky;
 	color:var(--text-dark);
-    top: 0;
+    	top: 0;
 	left:0;
 	width:100%;
 	padding-top: 10px;
@@ -67,7 +67,7 @@ header h1{
 nav{
 	padding: 5px 10px 15px 10px;
 	font-family: arial narrow;
-    text-transform: uppercase;
+   	text-transform: uppercase;
 	font-size:12px;
 }
 nav ul{
@@ -89,7 +89,7 @@ nav a{
 
 nav a:hover{
 	color: var(--secondary);
-	border-bottom: 3px solid var(--secondary);
+	border-bottom: 3px solid var(--highlight);
 	font-weight:bold;
 }
 
@@ -245,6 +245,8 @@ textarea{
 }
 .places-row{
 	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	border-bottom: var(--secondary) 1px solid;
 }
 
@@ -258,6 +260,12 @@ textarea{
 .places-row>div{
 	width: 50%;
 	padding: 10px;
+	box-sizing: border-box;
+}
+@media only screen and (max-width: 1200px) {
+	.places-row>div{
+	width: 100%;
+}
 }
 
 .place-item{
@@ -265,19 +273,24 @@ textarea{
 }
 
 .place-title{
-	margin-left:10px;
+	margin: 0 10px 20px 0;
 	color:var(--secondary);
 	text-transform:uppercase;
 }
 
 .place-info{
 	width:100%;
-	margin-top:30px;
+    margin-top: 10px;
 }
 
 .place-info th{
 	width:33.33%;
 	color: var(--highlight);
+}
+
+.place-info td{
+	font-size:0.85em;
+	text-center:
 }
 
 .floatButton{
