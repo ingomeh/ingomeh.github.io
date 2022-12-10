@@ -78,7 +78,7 @@ nav ul{
 
 nav ul li{
 	display:inline;
-	font-size:1em;
+	font-size:1.3em;
 }
 
 nav a{
@@ -105,8 +105,29 @@ footer{
 footer a{
 	margin: 0px 5px;
 }
+video{
+	width:100%;
+}
 
 /* Index */
+
+.content h3{
+    font-size: 1.3em;
+    font-weight: normal;
+    color: #8f8f8f;
+    font-style: italic;
+    line-height: 1.5em;
+    padding: 25px 120px;
+}
+
+@media only screen and (max-width: 800px) {
+	.content h3{
+		padding: 10px 0;
+		font-size: 1em;
+	}
+}
+
+
 .secondary-menu-title{
 	text-align: center;
 	color:var(--primary);
@@ -293,6 +314,15 @@ textarea{
 	text-center:
 }
 
+.download-map{
+	margin-top: 20px;
+}
+.download-map a{
+	text-decoration:none;
+	color: var(--primary);
+	font-size: 14px;
+}
+	
 .floatButton{
 	position:fixed;
 	background-color:var(--secondary);
@@ -330,6 +360,10 @@ textarea{
 	text-transform: uppercase;
 }
 
+/* Historia */
+.content-history p{
+	line-height: 2em;
+}
 
 
 
